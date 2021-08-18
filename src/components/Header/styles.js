@@ -3,8 +3,9 @@ import { FaSignOutAlt } from "react-icons/fa";
 
 export const Container = styled.header`
     width: 100vw;
+    height: 60px;
     position: fixed;
-    height: 100px;
+    top: 0;
 
     background-color: var(--primary);
 
@@ -25,7 +26,6 @@ export const Container = styled.header`
         font-size: 22px;
         padding-left: 10px;
     }
-
 `;
 
 export const IconSignOut = styled(FaSignOutAlt)`
@@ -37,7 +37,6 @@ export const IconSignOut = styled(FaSignOutAlt)`
 
     :hover{
         transform: scale(1.1) rotate(360deg);
-        transition: all ease 2s;
+        transition: .2s;
     }
-
 `;
