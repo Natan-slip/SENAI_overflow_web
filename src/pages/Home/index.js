@@ -27,15 +27,28 @@ function Home() {
         ]
     }];
 
+    /*const profile = [{
+        author: {
+            name: "Ciclano",
+        },
+        RA: "Ciclano de tal",
+        email: "ciclanoOliveira@gmail.com",
+        image1: "",
+        image2: ""
+    }];*/
+
     return (
         <>
             <Header />
             <Main>
                 <nav>
-                    Profile
+                    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDjWXHWwNEeNL0VldfUqJ6Snnng8EmTPC6g&usqp=CAU" />
+                    <h1>Ciclano Elias da Silva</h1>
+                    <h2>RA: 4002-8922</h2>
+                    <h2>ciclanoelias@gmail.com</h2>
                 </nav>
                 <FeedContainer>
-                    {posts.map(post => <PostCard post= {post} />)}
+                    {posts.map(post => <PostCard post={post} />)}
                 </FeedContainer>
                 <aside>
                     Actions
@@ -43,7 +56,7 @@ function Home() {
             </Main>
         </>
     );
-}   
+}
 
 function PostCard({ post }) {
 
@@ -56,7 +69,7 @@ function PostCard({ post }) {
                         por {post.author.name}
                     </strong>
                     <p>
-                    {post.created_at}
+                        {post.created_at}
                     </p>
                 </div>
                 {post.gist && <GistIcon />}
@@ -83,5 +96,14 @@ function PostCard({ post }) {
     );
 
 }
+
+/*function PostProfile({profile}) {
+
+    return (
+        <Profile>
+
+        </Profile>
+    )
+}*/
 
 export default Home;

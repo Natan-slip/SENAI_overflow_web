@@ -17,6 +17,34 @@ export const Main = styled.main`
 
     display: grid;
     grid-template-columns: 20% 60% 20%;
+
+    > nav {
+        width: 370px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 5px;
+        background-color: blue;
+        margin-left: auto;
+        margin-right: auto;
+
+        > img {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        > h1 {
+            font-weight: bold;
+            
+        }
+
+        >h2 {
+            font-size: 19px;
+        }
+    }
 `;
 
 export const FeedContainer = styled.section`
@@ -109,6 +137,13 @@ export const Post = styled.article`
         }
     }
 `;
+ 
+/*export const Nav = styled.nav `
+    margin-top: 10px;
+
+    
+
+`;*/
 
 /*> img {
     width: 800px;
