@@ -21,4 +21,24 @@ export const GlobalStyleComponent = createGlobalStyle`
         
     }
 
+    button {
+        padding: 10px;
+        font-weight: bold;
+        background-color: transparent;
+        border: 2px solid var(--Textprimary);
+        color: var(--Textprimary);
+        cursor: pointer;
+        transition: .2s;
+
+        :hover{
+            border: 2px solid var(--primary);
+            color:  var(--primary);
+        }
+
+        :active{
+            transform: scale(0.9);
+        }
+
+    }
+
 `;
