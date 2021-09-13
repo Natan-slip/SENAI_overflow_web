@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-function Coments({coment}) {
+function Coments({ coment }) {
     return (
         <Container>
             <header>

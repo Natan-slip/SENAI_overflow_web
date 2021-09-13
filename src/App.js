@@ -1,14 +1,13 @@
-import { GlobalStyleComponent } from "./GlobalStyles";
-import Login from "./pages/Login";
-
+import { GlobalStyles } from "./GlobalStyles";
+import Router from "./router";
 function App() {
+
   return (
     <>
-      <GlobalStyleComponent />
-      <Login />
+      <GlobalStyles />
+      <Router />
     </>
   );
-
 }
 
 export default App;

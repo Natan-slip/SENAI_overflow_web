@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyleComponent = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 
     :root{
-        --primary: #FE0000;
+        --primary: #fe0000;
         --textPrimary: #000000;
     }
 
@@ -16,29 +16,26 @@ export const GlobalStyleComponent = createGlobalStyle`
     }
 
     body{
-        font-family: sans-serif;
-        color: var(---textPrimary);
-        
+        font-family: sans-serif, Arial;
+        color: var(--textPrimary);
     }
 
     button {
         padding: 10px;
         font-weight: bold;
         background-color: transparent;
-        border: 2px solid var(--Textprimary);
-        color: var(--Textprimary);
+        border: 2px solid var(--textPrimary);
+        color: var(--textPrimary);
         cursor: pointer;
         transition: .2s;
 
         :hover{
             border: 2px solid var(--primary);
-            color:  var(--primary);
+            color: var(--primary);
         }
-
         :active{
-            transform: scale(0.9);
+            transform: scale(0.95);
         }
-
     }
 
 `;

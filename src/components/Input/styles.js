@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     transition: 0.2s ease-in-out;
 
-    color: var(--darkGray);
+    color: var(--textPrimary);
     cursor: text;
 
     pointer-events: none;
